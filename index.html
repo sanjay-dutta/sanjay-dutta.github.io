@@ -8,35 +8,37 @@
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link rel="icon" type="image/png" href="images/sad64.png">
 <style>
-  /* Add some CSS to structure the layout for vertical division */
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  /* CSS for vertical (side-by-side) layout */
+  .vertical-split-container {
+    display: flex; /* Use flexbox to create the layout */
+    width: 100%; /* Container takes full width of the viewport */
   }
-  .flex-container {
-    display: flex;
-    flex-direction: column; /* Stack flex items vertically */
-    height: 100vh; /* Full viewport height */
+  .left-half, .right-half {
+    flex: 1; /* Each half takes equal width */
+    padding: 20px; /* Adjust padding as needed */
   }
-  .flex-half {
-    flex: 1; /* Each child will take up equal height */
-    text-align: center; /* Centering text for demonstration */
-    padding: 20px; /* Just for some internal spacing */
+  /* Optional: Styles for demonstration */
+  .left-half {
+    background-color: #f0f0f0; /* Light grey background for left half */
+  }
+  .right-half {
+    background-color: #ffffff; /* White background for right half */
   }
 </style>
 </head>
 
 <body>
-<div class="flex-container">
-  <!-- Top half of the page -->
-  <div class="flex-half" style="background-color: lightgrey;">
-    <p>Content for the top half goes here...</p>
+<div class="vertical-split-container">
+  <!-- Left half of the page -->
+  <div class="left-half">
+    <p>Content for the left half goes here...</p>
+    <!-- Insert your left-side content here -->
   </div>
   
-  <!-- Bottom half of the page -->
-  <div class="flex-half" style="background-color: lightblue;">
-    <p>Content for the bottom half goes here...</p>
+  <!-- Right half of the page -->
+  <div class="right-half">
+    <p>Content for the right half goes here...</p>
+    <!-- Insert your right-side content here -->
   </div>
 </div>
 </body>
