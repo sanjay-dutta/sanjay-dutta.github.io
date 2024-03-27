@@ -467,7 +467,55 @@
               <div id="funProjects" style="padding-top: 20px;">
                 <h2>Fun Projects</h2>
                 <ul>
-                    <li>Project 1: Description or Link</li>
+                    <li>Project 1: Description or Link 
+
+                      <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
+                            <source src="images/noise.jpg" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                            <img src='images/noise.jpg' width="160">
+                          </div>
+                          <script type="text/javascript">
+                            function ibrnet_start() {
+                              document.getElementById('ibrnet_image').style.opacity = "1";
+                            }
+            
+                            function ibrnet_stop() {
+                              document.getElementById('ibrnet_image').style.opacity = "0";
+                            }
+                            ibrnet_stop()
+                          </script>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                         <!-- <a href="https://ibrnet.github.io/"> -->
+                            <papertitle>Noise Profiling for ANNs: A Bio-inspired Approach</papertitle>
+                          </a>
+                          <!--<br>
+                          <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a>,
+                          <a href="https://www.linkedin.com/in/zhicheng-wang-96116897/">Zhicheng Wang</a>,
+                          <a href="https://www.kylegenova.com/">Kyle Genova</a>,
+                          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+                          <a href="https://scholar.google.com/citations?user=Rh9T3EcAAAAJ&hl=en">Howard Zhou</a>, <br>
+                          <strong>Jonathan T. Barron</strong>, 
+                          <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+                          <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>, 
+                          <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>
+                          <br>-->
+                          <em>On going</em>, 2023
+                          <br>
+                   <a href="https://doi.org/10.1007/978-3-031-47508-5_12">Publication</a> 
+                          <!-- <a href="https://ibrnet.github.io/">project page</a> / -->
+                          <!-- <a href="Uploading">code</a> / -->
+                          <!-- <a href="https://doi.org/10.1007/978-3-031-47508-5_12">Springer</a> / -->
+                          <p></p>
+                          <p>A novel approach to noise profiling for artificial neural networks (ANNs) is proposed, which is inspired by the sensory systems of insects. This approach entails the utilization of both Gaussian and Chaotic noises to enhance the adaptability, learning and generalization capabilities of ANNs.</p>
+                        </td>
+                      </tr>
+
+                    </li>
                     <li>Project 2: Description or Link</li>
                     <!-- Add more projects as needed -->
                 </ul>
