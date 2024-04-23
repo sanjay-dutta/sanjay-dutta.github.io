@@ -1,54 +1,64 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Sanjay Jyoti Dutta</title>
-  
   <meta name="author" content="Sanjay Jyoti Dutta">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/sad64.png">
 
   <style>
-    .button {
-      background-color: orange; /* Button background color */
-      color: white; /* Button text color */
-      padding: 5px 10px; /* Button padding */
-      text-decoration: none; /* Remove underline from links */
-      border-radius: 3px; /* Optional: rounded corners for the button */
-      display: inline-block; /* Align items inline */
-    }
-    
-    /* Additional styling for the "Back to Top" button */
-    .button-top {
-      font-weight: bold; /* Make text bold */
+    /* Basic reset */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* Ensure full height */
     }
 
+    /* Flexbox setup for the page */
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Content takes up all available space */
+    .content {
+      flex: 1; /* Allows content to expand to fill available space pushing the footer down */
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #f0f0f0;
+      color: #333;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Styling for buttons */
+    .button {
+      background-color: orange;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    /* Styling for "Back to Top" button */
+    .button-top {
+      font-weight: bold;
+    }
+
+    /* Text justification */
     .justified-text p, .justified-text li {
-    text-align: justify;
-    text-justify: inter-word;
+      text-align: justify;
+      text-justify: inter-word;
     }
   </style>
-
-<style>
-  .justified-text {
-    text-align: justify;
-    text-justify: inter-word; /* Ensures optimal spacing between words for justification */
-  }
-</style>
-
-<style>
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f0f0f0;
-    color: #333;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-</style>
 </head>
 
 <body>
