@@ -691,9 +691,13 @@ footer {
     </tr>
   </table>
   <footer>
-    <p>© 2024 Sanjay Jyoti Dutta</p>
-  </footer>
-  
+    <p>© <span id="year"></span> Sanjay Jyoti Dutta</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+ 
 </body>
 
 </html>
