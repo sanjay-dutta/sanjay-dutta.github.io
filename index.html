@@ -10,33 +10,33 @@
 
   <style>
     /* Basic reset */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%; /* Ensure full height */
-    }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* This will ensure the html and body are at least the height of the viewport */
+}
 
-    /* Flexbox setup for the page */
-    body {
-      display: flex;
-      flex-direction: column;
-    }
+/* Flexbox setup for the page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This makes sure that the body is at least the height of the entire viewport */
+}
 
-    /* Content takes up all available space */
-    .content {
-      flex: 1; /* Allows content to expand to fill available space pushing the footer down */
-      padding: 20px;
-    }
+/* Content takes up all available space */
+.content {
+    flex: 1; /* This will make the content expand to fill the available space */
+}
 
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #f0f0f0;
-      color: #333;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-    }
+/* Footer at the bottom */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    color: #333;
+    position: relative; /* Changed to 'relative' to ensure that it follows the normal flow after the .content */
+    width: 100%;
+}
 
     /* Styling for buttons */
     .button {
